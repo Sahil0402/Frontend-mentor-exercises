@@ -33,6 +33,7 @@ async function getData() {
         const img = document.createElement('img');
         img.src = val.icon;
         img.style.fontWeight='800';
+        img.alt=val.category;
 
         const span = document.createElement('span');
         span.style.color = colorArray[val.category][0];
