@@ -94,7 +94,7 @@ select {
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
 /* the code begins */
-*{
+* {
   font-family: "Hanken Grotesk", sans-serif;
 }
 body {
@@ -171,7 +171,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.summary-text{
+.summary-text {
   font-size: 1.1rem;
   font-weight: 700;
   display: flex;
@@ -214,10 +214,10 @@ body {
 .bold {
   font-weight: 700;
 }
-.gray-color{
+.gray-color {
   color: gray;
 }
-.con-btn{
+.con-btn {
   background-color: var(--dark-gray-blue);
   color: var(--white);
   padding: 15px;
@@ -227,4 +227,23 @@ body {
   border-radius: 30px;
   width: 90%;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .score-div {
+    height: 100%;
+    display: flex;
+  }
+  .summary-text{
+    margin-top: 20px;
+  }
+  .con-btn{
+    margin-top: 10px;
+  }
 }
